@@ -1,2 +1,2 @@
-# at-office
+# Atoffice
 App for managing your business.
