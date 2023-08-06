@@ -15,7 +15,7 @@
     "releaseType": "release"
   },
   "build": {
-    "appId": "com.coderat.autoupdater",
+    "appId": "com.coderat.atoffice",
     "productName": "Atoffice",
     "artifactName": "${productName}-Setup-${version}-${os}-${arch}.${ext}",
     "win": {
