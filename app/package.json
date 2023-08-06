@@ -1,0 +1,43 @@
+{
+  "name": "at-office",
+  "version": "1.0.0",
+  "description": "App for managing your business.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec electron .",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/andreykatro/at-office.git",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.coderat.autoupdater",
+    "productName": "Atoffice",
+    "artifactName": "${productName}-Setup-${version}-${os}-${arch}.${ext}",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+
+  "author": "Andrii Trofimuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreykatro/at-office/issues"
+  },
+  "homepage": "https://github.com/andreykatro/at-office#readme",
+  "devDependencies": {
+    "electron": "^25.4.0",
+    "electron-builder": "^24.6.3",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.1"
+  }
+}
